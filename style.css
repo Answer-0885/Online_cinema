@@ -171,7 +171,7 @@ line-height: 35px;
   border-radius: 10px;
   margin-bottom: 40px;
   margin-top: 61px;
-  overflow-x: auto;
+  overflow-x:auto;
 }
 .scheme-svg{
   max-width: 1170px;
@@ -269,15 +269,38 @@ line-height: 35px;
     margin-right: 20px;
   }
 }
+
+@media (max-width:992px) {
+  .container {
+    max-width: 750px;
+  }
+  .session {
+    flex-wrap: wrap;
+  }
+  .session-date {
+    flex-basis: 70%;
+    margin-bottom: 40px;
+  }
+  .session-time {
+    order: 2;
+  }
+  .session-cinema {
+    order: 3;
+  }
+  .menu-item {
+    margin-right: 20px;
+  }
+}
+
 @media (max-width:768px) {
-  .container{
+  .container {
     min-width: 560px;
   }
   .menu {
     position: absolute;
     left: 0;
     top: 40px;
-    flex-direction:column;
+    flex-direction: column;
     padding: 20px;
     margin: 0px;
     margin-left: 10px;
@@ -289,31 +312,144 @@ line-height: 35px;
     transform: translateY(-20%);
     transition: opacity 0.5s, transform 0.5s;
   }
-  .menu-item:not(:last-child){
+
+  .menu-item:not(:last-child) {
     margin-bottom: 15px;
   }
-  .m-menu{
+
+  .m-menu {
     display: block;
     background-color: transparent;
-    border:none;
+    border: none;
     width: 40px;
     height: 40px;
     cursor: pointer;
   }
-  .open{
+
+  .open {
     opacity: 1;
     visibility: visible;
-    transform:translateY(0);
+    transform: translateY(0);
   }
-  .film-description{
+
+  .film-description {
     margin-right: 30px;
   }
-  .film{
-    flex-direction:column;
+
+  .film {
+    flex-direction: column;
   }
-  .film-trailer{
+
+  .film-trailer {
     margin-right: auto;
     margin-left: 0;
     margin-top: 40px;
+  }
+  .button{
+  font-size: 14px;
+  line-height: 18px;
+  padding: 18px 40px;
+  }
+}
+@media (max-width:580px) {
+  .container {
+    min-width: 400px;
+  }
+}
+@media (max-width:500px) {
+  .legend{
+    flex-direction:column;
+    align-items: flex-start;
+  }
+
+  .legend-free {
+    font-size: 14px;
+    line-height: 18px;
+
+  }
+  .legend-active {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 15px;
+  }
+  .legend-booked {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width:447px) {
+  .session-label{
+    margin-top: 30px;
+  }
+}
+@media (max-width:440px) {
+  .container {
+    min-width: 320px;
+  }
+  .session-date-item{
+  width: 67px;
+  height: 67px;
+  }
+  .session-month {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .session-day {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .session-week {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .film-trailer svg {
+    width: 70px;
+    height: 70px;
+  }
+  .price-label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .price-total,
+  .ruble {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .button {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 14px 32px;
+  }
+}
+@media (max-width:340px) {
+   .container {
+     min-width: 300px;
+  }
+  .session-date-item {
+    padding-top:3px;
+    padding-bottom: 3px;
+  }
+  .session-date-item {
+    width: 64px;
+    height: 80px;
+  }
+  .session-month {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .session-day {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .session-week {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
